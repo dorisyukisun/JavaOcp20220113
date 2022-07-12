@@ -1,0 +1,24 @@
+package com.study.ocp.Day11;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueDemo {
+
+	public static void main(String[] args) {
+	Queue<String> jobs = new LinkedList<>();
+	jobs.offer("熱鍋");
+	jobs.offer("下油");
+	jobs.offer("放蛋");
+	jobs.offer("倒飯");
+	jobs.offer("盛出");
+	System.out.println(jobs);
+	while(!jobs.isEmpty()) {
+		String job =jobs.poll();
+		System.out.println(jobs);
+	}
+	System.out.println(jobs);
+
+	}
+
+}
